@@ -13,6 +13,14 @@
 		846494762122D15A00CF2677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846494752122D15A00CF2677 /* Assets.xcassets */; };
 		846494792122D15A00CF2677 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846494772122D15A00CF2677 /* LaunchScreen.storyboard */; };
 		846494852122F79300CF2677 /* PBExchangeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846494842122F79300CF2677 /* PBExchangeTableViewCell.swift */; };
+		8464948721230C3200CF2677 /* NBUExchangeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464948621230C3200CF2677 /* NBUExchangeTableViewCell.swift */; };
+		846494892123137600CF2677 /* RatioVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846494882123137600CF2677 /* RatioVCModel.swift */; };
+		8464948B2123153700CF2677 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464948A2123153700CF2677 /* Currency.swift */; };
+		8464948D21231BDA00CF2677 /* DatedCurrencyResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464948C21231BDA00CF2677 /* DatedCurrencyResponce.swift */; };
+		8464948F21231C8700CF2677 /* GETKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464948E21231C8700CF2677 /* GETKeys.swift */; };
+		8464949121231DDF00CF2677 /* Responce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464949021231DDF00CF2677 /* Responce.swift */; };
+		846494942123243300CF2677 /* RatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846494932123243300CF2677 /* RatesService.swift */; };
+		84781D5A2123AFCB007C6E53 /* PopoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84781D592123AFCB007C6E53 /* PopoverVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		846494782122D15A00CF2677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8464947A2122D15A00CF2677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846494842122F79300CF2677 /* PBExchangeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBExchangeTableViewCell.swift; sourceTree = "<group>"; };
+		8464948621230C3200CF2677 /* NBUExchangeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBUExchangeTableViewCell.swift; sourceTree = "<group>"; };
+		846494882123137600CF2677 /* RatioVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioVCModel.swift; sourceTree = "<group>"; };
+		8464948A2123153700CF2677 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		8464948C21231BDA00CF2677 /* DatedCurrencyResponce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatedCurrencyResponce.swift; sourceTree = "<group>"; };
+		8464948E21231C8700CF2677 /* GETKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GETKeys.swift; sourceTree = "<group>"; };
+		8464949021231DDF00CF2677 /* Responce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responce.swift; sourceTree = "<group>"; };
+		846494932123243300CF2677 /* RatesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesService.swift; sourceTree = "<group>"; };
+		84781D592123AFCB007C6E53 /* PopoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,63 @@
 		8464946D2122D15600CF2677 /* ExchangeRater */ = {
 			isa = PBXGroup;
 			children = (
-				8464946E2122D15600CF2677 /* AppDelegate.swift */,
-				846494702122D15600CF2677 /* RatioViewController.swift */,
-				846494842122F79300CF2677 /* PBExchangeTableViewCell.swift */,
-				846494722122D15600CF2677 /* Main.storyboard */,
-				846494752122D15A00CF2677 /* Assets.xcassets */,
-				846494772122D15A00CF2677 /* LaunchScreen.storyboard */,
+				84781D5B2123D6BB007C6E53 /* MainVC */,
+				84781D592123AFCB007C6E53 /* PopoverVC.swift */,
+				84649492212323C300CF2677 /* Services */,
+				84781D5C2123D6D3007C6E53 /* Views */,
+				84781D5D2123D6EA007C6E53 /* Shared Entities */,
+				84781D5E2123D70B007C6E53 /* Other */,
 				8464947A2122D15A00CF2677 /* Info.plist */,
 			);
 			path = ExchangeRater;
+			sourceTree = "<group>";
+		};
+		84649492212323C300CF2677 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				846494932123243300CF2677 /* RatesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84781D5B2123D6BB007C6E53 /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				846494702122D15600CF2677 /* RatioViewController.swift */,
+				846494882123137600CF2677 /* RatioVCModel.swift */,
+			);
+			path = MainVC;
+			sourceTree = "<group>";
+		};
+		84781D5C2123D6D3007C6E53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				846494842122F79300CF2677 /* PBExchangeTableViewCell.swift */,
+				8464948621230C3200CF2677 /* NBUExchangeTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84781D5D2123D6EA007C6E53 /* Shared Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8464948A2123153700CF2677 /* Currency.swift */,
+				8464948E21231C8700CF2677 /* GETKeys.swift */,
+				8464948C21231BDA00CF2677 /* DatedCurrencyResponce.swift */,
+				8464949021231DDF00CF2677 /* Responce.swift */,
+			);
+			path = "Shared Entities";
+			sourceTree = "<group>";
+		};
+		84781D5E2123D70B007C6E53 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				846494752122D15A00CF2677 /* Assets.xcassets */,
+				846494722122D15600CF2677 /* Main.storyboard */,
+				846494772122D15A00CF2677 /* LaunchScreen.storyboard */,
+				8464946E2122D15600CF2677 /* AppDelegate.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +202,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84781D5A2123AFCB007C6E53 /* PopoverVC.swift in Sources */,
+				8464948B2123153700CF2677 /* Currency.swift in Sources */,
+				846494942123243300CF2677 /* RatesService.swift in Sources */,
 				846494852122F79300CF2677 /* PBExchangeTableViewCell.swift in Sources */,
+				8464948F21231C8700CF2677 /* GETKeys.swift in Sources */,
+				8464948D21231BDA00CF2677 /* DatedCurrencyResponce.swift in Sources */,
+				8464948721230C3200CF2677 /* NBUExchangeTableViewCell.swift in Sources */,
 				846494712122D15600CF2677 /* RatioViewController.swift in Sources */,
 				8464946F2122D15600CF2677 /* AppDelegate.swift in Sources */,
+				846494892123137600CF2677 /* RatioVCModel.swift in Sources */,
+				8464949121231DDF00CF2677 /* Responce.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,16 +9,15 @@
 import UIKit
 
 class PBExchangeTableViewCell: UITableViewCell {
-    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var buy: UILabel!
+    @IBOutlet weak var sell: UILabel!
     
     
-    func configure(){
-        guard let labels = stackView.arrangedSubviews as? [UILabel] else {
-            fatalError()
-        }
-        labels[0].text = "EUR"
-        labels[1].text = "28.300"
-        labels[2].text = "28.300"
+    func configure(currency: Currency<GETPBCurrentKeys>){
+        name.text = currency.currency
+        buy.text = String(currency.buy)
+        sell.text = String(currency.sale)
     }
     
     override func awakeFromNib() {
